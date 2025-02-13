@@ -12,8 +12,8 @@ import Movie from "./component/Movie";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div>
+    <div>
+      <BrowserRouter>
         <TopBar />
 
         <Routes>
@@ -24,12 +24,6 @@ const App = () => {
           {/* <Route path="/My-List" element={<MyList />} /> */}
         </Routes>
         <DropDown />
-        <h3 className="bg-dark text-white mb-0 p-3 px-4 pt-3">Trending Now</h3>
-        <TrendingNow />
-        <h3 className="bg-dark text-white mb-0 p-3 px-4 pt-3">Watch It Again</h3>
-        <WatchItAgain />
-        <h3 className="bg-dark text-white mb-0 p-3 px-4 pt-3">New Releases</h3>
-        <NewReleases />
         <Footer />
       </div>
     </BrowserRouter>
