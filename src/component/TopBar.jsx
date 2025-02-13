@@ -2,6 +2,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import { IoSearch } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 const TopBar = () => {
   return (
@@ -14,21 +15,21 @@ const TopBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className="text-white" href="#home">
+              <NavLink className="text-white" href="#home">
                 Home
-              </Nav.Link>
-              <Nav.Link className="text-white" href="#">
+              </NavLink>
+              <NavLink className="text-white" href="#">
                 TV Shows
-              </Nav.Link>
-              <Nav.Link className="text-white" href="#">
+              </NavLink>
+              <NavLink className="text-white" href="#">
                 Movies
-              </Nav.Link>
-              <Nav.Link className="text-white" href="#">
+              </NavLink>
+              <NavLink className="text-white" href="#">
                 Recently Added
-              </Nav.Link>
-              <Nav.Link className="text-white" href="#">
+              </NavLink>
+              <NavLink className="text-white" href="#">
                 My List
-              </Nav.Link>
+              </NavLink>
             </Nav>
             <div className="d-flex align-items-center">
               <IoSearch className="icons me-3 text-white" />
