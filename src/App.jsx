@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopBar from "./component/TopBar";
 import Home from "./component/Home";
 import TvShow from "./component/TVShow";
-import Movie from "./component/Movie";
+import MovieDetails from "./component/Movie";
 import DropDown from "./component/DropDown";
 import Footer from "./component/footer";
 
@@ -16,9 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tv-shows" element={<TvShow />} />
-          <Route path="/Movie" element={<Movie />} />
-          {/* <Route path="/Recently-Added" element={<RecentlyAdded />} /> */}
-          {/* <Route path="/My-List" element={<MyList />} /> */}
+          <Route path="/details/:movieID" element={<MovieDetails />} />
         </Routes>
         <DropDown />
         <Footer />
